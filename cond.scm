@@ -1,0 +1,25 @@
+(define (abs x)
+    (cond ((> x 0) x)
+    ((= x 0) 0)
+    ((< x 0) (- x)))
+)
+(abs -100)
+(abs 0)
+(abs 100)
+
+(define (abs1 x)
+    (cond ((< x 0) (- x))
+    (else x))
+)
+(abs1 -100)
+(abs1 0)
+(abs1 100)
+
+
+
+(define (abs2 x)
+    (if (< x 0) (- x) x)
+)
+(abs2 -100)
+(abs2 0)
+(abs2 100)
